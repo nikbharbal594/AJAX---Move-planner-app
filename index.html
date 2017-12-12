@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Moving Companion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <form id="form-container" class="form-container">
+        <span class="form-elements"><label class="label" for="street">Street: </label><input type="text" id="street" value="" required></span>
+        <span class="form-elements"><label class="label" for="city">City: </label><input type="text" id="city" value="" required></span>
+        <span class="form-elements"><label class="label" for="state">State: </label><input type="text" id="state" value="" required></span>
+        <span class="form-elements"><button>Submit</button></span>
+    </form>
+    
+    <hr>
+
+    <h2 id="greeting" class="greeting">Where do you want to move to? Enter an address and hit Submit to explore what your city has to offer!</h2>
+    
+    <div class="weather-map">
+        <div id="map-container" class="map-container">
+            <h3>Your address on the map</h3>
+        </div>
+        <div class="weather-container">
+            <h3 id="weather-header">Local weather conditions</h3>
+            <ul id="weather-info" class="weather">Find information about current weather conditions in your city here!</ul>
+        </div>
+    </div>
+    
+    <div class="wikipedia-container">
+        <h3 id="wikipedia-header">Wikipedia Articles</h3>
+        <ul id="wikipedia-links" class="article-list">Find relevant Wikipedia articles to know more about your city here!</ul>
+    </div>
+    
+    <div class="nytimes-container">
+        <h3 id="nytimes-header"> The New York Times Articles</h3>
+        <ul id="nytimes-articles" class="article-list">What's been going on in/around your new city lately? The NYT will tell you right here!</ul>
+    </div>
+    
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
