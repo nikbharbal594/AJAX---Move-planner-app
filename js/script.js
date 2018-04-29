@@ -81,7 +81,7 @@ function loadData() {
     //load NYT articles
     $.getJSON("https://api.nytimes.com/svc/search/v2/articlesearch.json?" + "api-key=c4ac412063d7475cbec9e0fa8956f248&q=" + city + "&fq=" + state,function(data){ 
         $nytHeaderElem.text("What's been going on in/around your city lately?");       
-        console.log(data);
+        //console.log(data);
         var articles = data.response.docs;
         for(var i=0; i<articles.length; i++){
            $nytElem.append('<li class="article">' + '<a href=' + articles[i].web_url + '>' + articles[i].headline.main + '</a>' +'<p>' + articles[i].snippet + '</p>' + '</li>');
